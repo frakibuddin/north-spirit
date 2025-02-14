@@ -22,6 +22,8 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 9;
+  padding: 10px 0;
 }
 dl,
 ol,
@@ -145,7 +147,7 @@ menu ul li a:hover::after {
 
 header.active {
   background: #000;
-
+  z-index: 999;
   animation: headerAnim 0.3s ease forwards;
 }
 
@@ -164,12 +166,6 @@ header.active {
   100% {
     top: 0;
   }
-}
-
-/* hero-section */
-.hero-section {
-  background: gray;
-  height: 600px;
 }
 
 /* Glance */
@@ -272,4 +268,256 @@ header.active {
 .textarea select:focus,
 .textarea select:valid {
   border: 1px dotted #fff;
+}
+/*  */
+.eml-latter p {
+  font-size: 14px;
+  font-family: " ppneuemontreal_book", Arial, Helvetica, sans-serif;
+}
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+/* footer */
+footer {
+  padding: 20px 0;
+  background: linear-gradient(180deg, #171b1d 0%, #000000 61.46%);
+  text-align: center;
+}
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: block;
+  position: relative;
+}
+.footer-links div {
+  color: #fff;
+}
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  height: 1px;
+  background: #fff;
+  width: 0;
+}
+.footer-links a:hover::after {
+  width: 100%;
+}
+/* hero-section */
+.hero-section {
+  background: gray;
+  /* height: 600px; */
+}
+
+/* hero section */
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-weight: 900;
+  position: relative;
+}
+.slider-content {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 9;
+  color: #fff;
+  left: 8%;
+  text-align: left;
+  max-width: 600px;
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.swiper-pagination-bullet {
+  position: relative;
+  width: 156px;
+  height: auto;
+  text-align: left;
+  border-radius: 0;
+  opacity: 1;
+  margin-right: 20px;
+  background-color: transparent;
+}
+
+.swiper-pagination-bullet em {
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: bold;
+  letter-spacing: -0.38px;
+  color: #111;
+}
+
+.swiper-pagination-bullet i {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 10px;
+  background-color: hotpink;
+}
+
+.swiper-pagination-bullet b {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 0%;
+  height: 10px;
+  background-color: #111111;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: transparent;
+}
+
+.swiper-pagination-bullet-active b {
+  animation-name: countingBar;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes countingBar {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.swiper-pagination-bullet em {
+  line-height: 60px;
+  font-style: normal;
+  color: #fff;
+}
+
+.swiper-pagination-bullet i {
+  width: 400px;
+  position: absolute;
+  left: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.swiper-pagination-bullet i {
+  height: 3px;
+  background: hsla(0, 0%, 100%, 0.3);
+}
+
+.swiper-pagination-bullet b {
+  height: 3px;
+  background: #fff;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 80px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+
+video {
+  height: 100%;
+  width: 100%;
 }
