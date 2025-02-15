@@ -371,7 +371,8 @@ footer {
 }
 /* hero-section */
 .hero-section {
-  background: gray;
+  background: url(../media/video/preload.jpg);
+  background-size: cover;
   /* height: 600px; */
 }
 
