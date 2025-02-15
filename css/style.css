@@ -521,3 +521,74 @@ video {
   height: 100%;
   width: 100%;
 }
+
+/* intro page */
+.hero-section-vodka {
+  background: linear-gradient(#00000051, #00000070),
+    url(../media/hero-vodka-bg.png);
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+}
+.hero-content {
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+.hero-content h2,
+.hero-content p {
+  background: #000;
+  display: inline-block;
+  padding: 10px;
+}
+.pro-image img {
+  height: 400px;
+}
+.section-heading {
+  text-align: center;
+  font-size: 45px;
+  font-family: ppneuemontreal_bold, Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.section-padding {
+  padding: 70px 0;
+}
+
+/* gallay section */
+.gallery-section .gl {
+  position: relative;
+}
+.gallery-section .gl img {
+  width: 100%;
+  height: 100%;
+}
+.gallery-section .gl::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#00000060, #00000053);
+}
+.gallery-section .gl .gl-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  z-index: 9;
+}
+/* vodka page */
+.hero-section-vodka2 {
+  background: linear-gradient(#00000051, #00000090), url(../media/gallery-2.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.liquid-sec-image {
+  margin-top: -200px;
+}

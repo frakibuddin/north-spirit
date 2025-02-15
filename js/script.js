@@ -11,6 +11,14 @@ window.onscroll = function () {
   }
 };
 
+// toggle button
+const menu_toggle_btn = document.querySelector(".menu-toggle-btn");
+const tgl_menu = document.querySelector("menu ul");
+menu_toggle_btn.onclick = () => {
+  tgl_menu.classList.toggle("show");
+  menu_toggle_btn.classList.toggle("active");
+};
+
 //
 var listArray = ["BRING THE PARTY ANYWHERE", "AN ICON MEETS AN ICON"];
 var mySwiper = new Swiper(".swiper-container", {

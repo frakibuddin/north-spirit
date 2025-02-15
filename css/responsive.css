@@ -1,0 +1,46 @@
+@media (max-width: 850px) {
+  header {
+    position: relative;
+    background: black;
+  }
+  menu ul {
+    flex-direction: column;
+    position: absolute;
+    right: 5px;
+    top: 80px;
+    text-align: center;
+    padding: 0px 40px;
+    /* padding: 34px 40px; */
+    background: black;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  menu ul.show {
+    padding: 34px 40px;
+    height: auto;
+  }
+  .header-cta-btn {
+    display: none;
+  }
+  .menu-toggle-btn {
+    display: block !important;
+    cursor: pointer;
+  }
+  .menu-toggle-btn div {
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    margin: 5px;
+    transition: 0.3s;
+  }
+  .menu-toggle-btn.active .i-one {
+    transform: rotate(45deg) translateX(10px);
+  }
+  .menu-toggle-btn.active .i-two {
+    width: 0;
+  }
+  .menu-toggle-btn.active .i-three {
+    transform: rotate(-45deg) translateX(10px);
+  }
+}
