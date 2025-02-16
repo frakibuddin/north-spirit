@@ -593,3 +593,12 @@ video {
 .liquid-sec-image {
   margin-top: -200px;
 }
+/* BRAND SECTION  */
+.brands-row img {
+  height: 200px;
+}
+
+.gallery-brand-img {
+  height: 450px !important;
+  object-fit: cover;
+}
