@@ -99,6 +99,7 @@ menu ul li a:hover::after {
   z-index: 1;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
+  margin: 20px 0;
 }
 
 .cta-btn:hover,
@@ -173,6 +174,7 @@ header.active {
   font-size: 38px;
   font-family: "ppneuemontreal_bold", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 .section-subtitle {
   font-size: 20px;
