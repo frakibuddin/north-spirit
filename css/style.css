@@ -518,6 +518,7 @@ footer {
   top: var(--swiper-pagination-top, auto);
   left: 0;
   width: 100%;
+  display: none;
 }
 
 video {
