@@ -92,6 +92,9 @@
   .liquid-sec-image {
     display: none;
   }
+  .mega-menu {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   .slider-content {
