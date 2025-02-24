@@ -536,6 +536,12 @@ video {
   background-position: top center;
   height: 100vh;
 }
+.hero-section-product {
+  background: linear-gradient(#00000051, #00000070),
+    url(../media/product-oage-cover.jpeg);
+  background-size: cover;
+  background-position: top center;
+}
 .hero-content {
   max-width: 450px;
   position: absolute;
